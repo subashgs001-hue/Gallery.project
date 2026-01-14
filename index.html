@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Galary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Image Galary</h1>
+
+  <!-- Filters -->
+  <div class="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="animals">Animals</button>
+    <button data-filter="food">Food</button>
+    <button data-filter="travel">Travel</button>
+    <button data-filter="art">Art</button>
+  </div>
+
+  <!-- Search -->
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Search images...">
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <!-- Existing images -->
+    <img src="https://picsum.photos/id/1015/600/400" alt="Nature" data-category="nature">
+    <img src="https://picsum.photos/id/1011/600/400" alt="Animals" data-category="animals">
+    <img src="https://picsum.photos/id/1012/600/400" alt="City" data-category="city">
+    <img src="https://picsum.photos/id/1016/600/400" alt="Nature" data-category="nature">
+    <img src="https://picsum.photos/id/1020/600/400" alt="Animals" data-category="animals">
+    <img src="https://picsum.photos/id/1025/600/400" alt="City" data-category="city">
+
+    <!-- New Food images -->
+    <img src="https://picsum.photos/id/1080/600/400" alt="Food 1" data-category="food">
+    <img src="https://picsum.photos/id/1081/600/400" alt="Food 2" data-category="food">
+
+    <!-- New Travel images -->
+    <img src="https://picsum.photos/id/1060/600/400" alt="Travel 1" data-category="travel">
+    <img src="https://picsum.photos/id/1061/600/400" alt="Travel 2" data-category="travel">
+
+    <!-- New Art images -->
+    <img src="https://picsum.photos/id/1070/600/400" alt="Art 1" data-category="art">
+    <img src="https://picsum.photos/id/1071/600/400" alt="Art 2" data-category="art">
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <img src="" alt="lightbox">
+    <span class="next">&#10095;</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
